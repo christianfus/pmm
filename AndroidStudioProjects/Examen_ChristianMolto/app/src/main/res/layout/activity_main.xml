@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.chrsol.examen_christianmolto.MainActivity">
+
+    <TextView
+        android:text="¡¡ PIZZERIA ONLINE !!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold|italic"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:layout_marginEnd="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logopizza"
+        android:id="@+id/imageView"
+        android:layout_marginStart="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzas"
+        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="Calcular Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/calcular"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrega"
+        android:layout_below="@+id/pizzas"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp">
+
+        <RadioButton
+            android:text="En local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/local"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="A domicilio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/domicilio"
+            android:layout_below="@+id/zonas"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RadioGroup>
+
+    <CheckBox
+        android:text="+ Grande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tamano"
+        android:layout_below="@+id/entrega"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <CheckBox
+        android:text="+ Ingred."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientes"
+        android:layout_alignBaseline="@+id/tamano"
+        android:layout_alignBottom="@+id/tamano"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:text="+ Queso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/queso"
+        android:layout_below="@+id/tamano"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Número de pizzas"
+        android:ems="10"
+        android:layout_below="@+id/queso"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/numeropizzas"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

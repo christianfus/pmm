@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_factura"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16sp"
+    android:paddingLeft="64sp"
+    android:paddingRight="64sp"
+    android:paddingTop="16sp"
+    tools:context="com.example.chrsol.examen_christianmolto.Factura">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imagepizza"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Pizza:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagepizza"
+        android:layout_alignParentStart="true"
+        android:id="@+id/modelo"
+        android:layout_alignEnd="@+id/preciobase"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/modelo"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/amodelo"
+        android:layout_toEndOf="@+id/modelo"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Precio base: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modelo"
+        android:id="@+id/preciobase"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="Extra:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preciobase"
+        android:layout_alignParentStart="true"
+        android:id="@+id/extras"
+        android:layout_alignEnd="@+id/preciobase"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="Envio: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unidades"
+        android:layout_alignParentStart="true"
+        android:id="@+id/envio"
+        android:layout_alignEnd="@+id/unidades"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="Coste total:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/envio"
+        android:id="@+id/costetotal"
+        android:layout_alignEnd="@+id/preciobase"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="Hora pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/costetotal"
+        android:layout_alignParentStart="true"
+        android:id="@+id/horapedido"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preciobase"
+        android:id="@+id/aextras"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/preciobase"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aextras"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/aunidades"
+        android:layout_toEndOf="@+id/extras"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/costetotal"
+        android:layout_toEndOf="@+id/horapedido"
+        android:id="@+id/hora" />
+
+    <TextView
+        android:text="Unidades:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unidades"
+        android:layout_below="@+id/extras"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/aextras"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hora"
+        android:layout_alignParentStart="true"
+        android:id="@+id/reloj"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apreciobase"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/preciobase"
+        android:layout_alignBottom="@+id/preciobase"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/preciobase" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aenvio"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/envio"
+        android:layout_alignBottom="@+id/envio"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/envio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acostetotal"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/costetotal"
+        android:layout_alignBottom="@+id/costetotal"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/costetotal" />
+
+    <Button
+        android:text="Vuelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/vuelta"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
