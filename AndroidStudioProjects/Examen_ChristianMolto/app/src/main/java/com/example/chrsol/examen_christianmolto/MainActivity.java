@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
                 paso.putExtra("numeropizzas", numeropizzas.getText().toString());
                 paso.putExtra("preciopizzas", String.valueOf(PrecioPizzas));
-                double total =  PrecioPizzas + PrecioPizzas;
+
 
                 double tarifa = 0;
                 String ntarifa = " ";

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context="com.example.chrsol.a4botones.radio">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="..."/>
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="..."/>
+
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULA"/>
+
+        <RadioGroup
+            android:id="@+id/gruporb"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suma" />
+            <RadioButton
+                android:id="@+id/resta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resta" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESULTADO: "/>
+
+
+    </LinearLayout>
+
