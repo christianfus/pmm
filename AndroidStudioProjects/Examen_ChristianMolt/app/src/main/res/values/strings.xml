@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Examen_ChristianMoltó</string>
+    <string name="pending">Tareas de MANTENIMIENTO</string>
+    <string name="lstNoElements">lstNoElements</string>
+    <string name="identificator">identificator</string>
+    <string name="element">element</string>
+    <string name="place">place</string>
+    <string name="importance">importance</string>
+    <string name="description">description</string>
+    <string name="save">save</string>
+    <string name="editItem">editItem</string>
+    <string name="deleteItem">deleteItem</string>
+    <string name="newItem">newItem</string>
+    <string name="dataError">dataerror</string>
+    <string name="alrtDeleteEntry">alrtDeleteEntry</string>
+    <string name="alrtDelete">alrtDelete</string>
+</resources>
