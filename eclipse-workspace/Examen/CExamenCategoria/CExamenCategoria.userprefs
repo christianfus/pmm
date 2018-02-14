@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{0ECF584F-F8AC-4E21-8ADD-73EA8AE7E420}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CExamenCategoria/Properties/CategoriaDao.cs">
+    <Files>
+      <File FileName="CExamenCategoria/Program.cs" Line="20" Column="13" />
+      <File FileName="CExamenCategoria/Categoria.cs" Line="1" Column="1" />
+      <File FileName="CExamenCategoria/Properties/CategoriaDao.cs" Line="17" Column="22" />
+      <File FileName="CExamenCategoria/CategoriaDao.cs" Line="22" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CExamenCategoria PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
