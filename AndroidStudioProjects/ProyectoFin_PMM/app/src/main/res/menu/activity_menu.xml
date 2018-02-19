@@ -4,6 +4,6 @@
 
     <item android:title="Acerca DE:"
         android:id="@+id/acerca" />
-    <item android:title="JSON"
-        android:id="@+id/dibujar" />
+    <item android:title="Registro Pedidos"
+        android:id="@+id/pedidos" />
 </menu>

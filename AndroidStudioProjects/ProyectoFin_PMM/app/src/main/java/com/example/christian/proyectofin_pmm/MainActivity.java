@@ -26,9 +26,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Kebabs[] datos = new Kebabs[]{
-            new Kebabs("KEBAB ", "DE POLLO", 4),
-            new Kebabs("KEBAB ", "DE TERNERA", 3),
-            new Kebabs("FALAFEL ", "DE GARBANZOS", 5)
+            new Kebabs("KEBAB ", "DE POLLO", 4, R.drawable.kebab1),
+            new Kebabs("KEBAB ", "DE TERNERA", 3, R.drawable.kebab2),
+            new Kebabs("FALAFEL ", "DE GARBANZOS", 5, R.drawable.kebab3)
     };
 
     int[] imagenes = {R.drawable.kebab1, R.drawable.kebab2, R.drawable.kebab3};
@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 double precioKebab = datos[kebabs.getSelectedItemPosition()].getPrecio();
                 Kebabs seleccion = new Kebabs (datos[kebabs.getSelectedItemPosition()].getnombre(),
                         datos[kebabs.getSelectedItemPosition()].getdescripcion(),
-                        datos[kebabs.getSelectedItemPosition()].getPrecio());
+                        datos[kebabs.getSelectedItemPosition()].getPrecio(),
+                        datos[kebabs.getSelectedItemPosition()].getImagen());
                 pasoobjetos.putSerializable("Kebabs", seleccion);
                 paso.putExtras(pasoobjetos);
 
@@ -143,9 +144,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent acerca = new Intent(MainActivity.this, AcercaDe.class);
                 startActivity(acerca);
                 return true;
-            case R.id.dibujar:
-                Intent dibujo = new Intent(MainActivity.this, Dibujar.class);
-                startActivity(dibujo);
+            case R.id.pedidos:
+                Intent pedido = new Intent(MainActivity.this, PedidosActivity.class);
+                startActivity(pedido);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -178,6 +179,8 @@ public class MainActivity extends AppCompatActivity {
             TextView Precio = (TextView)item.findViewById(R.id.LblPrecio);
                 Precio.setText(String.valueOf(datos[i].getPrecio()) + "€");
 
+            ImageView Imagen = (ImageView)item.findViewById(R.id.img);
+                Imagen.setImageResource(datos[i].getImagen());
 
             return (item);
         }

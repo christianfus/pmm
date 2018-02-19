@@ -20,7 +20,8 @@
         <activity android:name=".Factura" />
         <activity android:name=".AcercaDe" />
         <activity android:name=".Kebabs" />
-        <activity android:name=".AdaptadorKebabs"></activity>
+        <activity android:name=".AdaptadorKebabs" />
+        <activity android:name=".PedidosActivity"></activity>
     </application>
 
 </manifest>

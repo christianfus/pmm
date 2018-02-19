@@ -25,5 +25,11 @@
         android:textColor="@android:color/black"
         android:textStyle="normal|bold" />
 
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="136dp"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/kebab1" />
+
 
 </LinearLayout>
